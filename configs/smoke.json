@@ -1,0 +1,8 @@
+{
+  "seed": 7,
+  "ebn0_db": [0, 4],
+  "min_errors": 100,
+  "max_bits": 2000,
+  "batch_bits": 1000,
+  "curves": [{"name": "BPSK", "family": "psk", "order": 2}]
+}

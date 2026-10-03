@@ -1,0 +1,17 @@
+{
+  "seed": 20261003,
+  "ebn0_db": [0, 2, 4, 6, 8, 10],
+  "min_errors": 400,
+  "max_bits": 500000,
+  "batch_bits": 20000,
+  "curves": [
+    {"name": "BPSK / AWGN", "family": "psk", "order": 2},
+    {"name": "QPSK / AWGN", "family": "psk", "order": 4},
+    {"name": "16-QAM / AWGN", "family": "qam", "order": 16},
+    {"name": "8-PSK / AWGN", "family": "psk", "order": 8},
+    {"name": "BPSK / Rayleigh", "family": "psk", "order": 2, "channel": "rayleigh"},
+    {"name": "QPSK / Rician (K=5)", "family": "psk", "order": 4, "channel": "rician"},
+    {"name": "BPSK / repetition", "family": "psk", "order": 2, "coding": "repetition"},
+    {"name": "BPSK / Hamming", "family": "psk", "order": 2, "coding": "hamming"}
+  ]
+}
