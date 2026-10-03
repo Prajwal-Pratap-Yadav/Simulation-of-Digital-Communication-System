@@ -2,7 +2,7 @@
 
 Changes follow the Keep a Changelog categories. Versioning uses Semantic Versioning.
 
-## 0.1.0 — in development
+## 0.1.0
 
 ### Added
 - Portable Python package with Gray PSK/QAM, AWGN/Rayleigh/Rician channels,

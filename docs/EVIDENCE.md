@@ -12,6 +12,7 @@ is the published implementation used for the measured run below.
 | Automated contracts and theory tolerance | Exact test counts and outcomes in JUnit | `.venv/bin/python -m pytest --junitxml=reports/test-results.xml -q` | Same | In JUnit | Same installed environment | [test-results.xml](../reports/test-results.xml) |
 | Full-history secret scan | No detected findings; regex scan is not proof of absence | `gitleaks detect --log-opts="--all" --redact` | Same implementation, plus unpublished local duplicates | 2026-10-03 | Gitleaks v8.30.1 on Linux | [history-secrets.json](../reports/history-secrets.json) |
 | Runtime dependency audit | Findings listed explicitly; feed-dependent | `.venv/bin/python -m pip_audit -r requirements-runtime.lock --strict` | Same | 2026-10-03 | pip-audit 2.9.0, locked dependency set | [dependency-audit.json](../reports/dependency-audit.json) |
+| Fresh-clone quickstart | Timings and cache condition in JSON; no general installation-speed claim | Clone the branch, then `make setup run` | `0f18b13a0e1eb6f91e9dca9633031be049cd6308` | 2026-10-03 | Fresh virtual environment, cached wheels, Linux CPU | [quality-gates.json](../reports/quality-gates.json) |
 
 CI uses a fixed-budget, predeclared wider statistical tolerance for the exact
 AWGN and Rayleigh cases. The plotted adaptive runs use a different purpose and
