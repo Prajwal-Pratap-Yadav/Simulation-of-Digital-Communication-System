@@ -1,0 +1,17 @@
+repos:
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.1
+    hooks:
+      - id: gitleaks
+  - repo: local
+    hooks:
+      - id: ruff
+        name: Python lint
+        entry: .venv/bin/python -m ruff check
+        language: system
+        types: [python]
+      - id: black
+        name: Python format
+        entry: .venv/bin/python -m black --check
+        language: system
+        types: [python]
