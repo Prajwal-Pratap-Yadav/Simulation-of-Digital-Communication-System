@@ -1,0 +1,16 @@
+name: Measurable enhancement
+description: Propose a capability with testable acceptance criteria.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and proposed behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria and validation
+      description: Energy conventions, tests, evidence, limitations and alternatives.
+    validations:
+      required: true
