@@ -1,0 +1,96 @@
+{
+  "commit": "ab49971d23ad55cf27fc7417322339fa06a2a4f1",
+  "date_utc": "2026-10-03T16:46:32.355597+00:00",
+  "config": {
+    "seed": 20261003,
+    "ebn0_db": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "min_errors": 400,
+    "max_bits": 500000,
+    "batch_bits": 20000,
+    "curves": [
+      {
+        "name": "BPSK / AWGN",
+        "family": "psk",
+        "order": 2,
+        "channel": "awgn",
+        "coding": "none",
+        "rician_k": 5.0
+      },
+      {
+        "name": "QPSK / AWGN",
+        "family": "psk",
+        "order": 4,
+        "channel": "awgn",
+        "coding": "none",
+        "rician_k": 5.0
+      },
+      {
+        "name": "16-QAM / AWGN",
+        "family": "qam",
+        "order": 16,
+        "channel": "awgn",
+        "coding": "none",
+        "rician_k": 5.0
+      },
+      {
+        "name": "8-PSK / AWGN",
+        "family": "psk",
+        "order": 8,
+        "channel": "awgn",
+        "coding": "none",
+        "rician_k": 5.0
+      },
+      {
+        "name": "BPSK / Rayleigh",
+        "family": "psk",
+        "order": 2,
+        "channel": "rayleigh",
+        "coding": "none",
+        "rician_k": 5.0
+      },
+      {
+        "name": "QPSK / Rician (K=5)",
+        "family": "psk",
+        "order": 4,
+        "channel": "rician",
+        "coding": "none",
+        "rician_k": 5.0
+      },
+      {
+        "name": "BPSK / repetition",
+        "family": "psk",
+        "order": 2,
+        "channel": "awgn",
+        "coding": "repetition",
+        "rician_k": 5.0
+      },
+      {
+        "name": "BPSK / Hamming",
+        "family": "psk",
+        "order": 2,
+        "channel": "awgn",
+        "coding": "hamming",
+        "rician_k": 5.0
+      }
+    ]
+  },
+  "config_sha256": "5488d959f04fbd9a77747325590250a075f5b08b1a0b11654dad38847881510c",
+  "environment": {
+    "os": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "python": "3.12.14",
+    "machine": "x86_64",
+    "processor": "x86_64",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "accelerator": "CPU"
+  },
+  "elapsed_seconds": 0.5766182470001695,
+  "interval_note": "Pointwise Wilson intervals; nominal coverage is not guaranteed under adaptive stopping or correlated errors."
+}

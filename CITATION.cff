@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this repository and the source commit for reproduced experiments."
+title: "Simulation of Digital Communication System"
+type: software
+authors:
+  - family-names: Yadav
+    given-names: Prajwal Pratap
+version: 0.1.0
+license: MIT
+url: "https://github.com/Prajwal-Pratap-Yadav/Simulation-of-Digital-Communication-System"
+repository-code: "https://github.com/Prajwal-Pratap-Yadav/Simulation-of-Digital-Communication-System"

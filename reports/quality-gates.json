@@ -1,0 +1,11 @@
+{
+  "source_commit": "0f18b13a0e1eb6f91e9dca9633031be049cd6308",
+  "environment": "Linux x86_64, Python 3.12.14, CPU, dependency wheels cached from earlier setup",
+  "fresh_clone_seconds": 11.477,
+  "setup_and_smoke_seconds": 35.22,
+  "total_quickstart_seconds": 46.697,
+  "command": "git clone --branch portfolio-overhaul URL; cd R13; make setup run",
+  "fresh_checks": "make lint typecheck test docs build",
+  "passed": true,
+  "review": "Title/value proposition and real hero observed on GitHub. Structure, granular commits, evidence, original preservation and limitation statements reviewed. This is an engineering inspection, not a study with external recruiters."
+}
