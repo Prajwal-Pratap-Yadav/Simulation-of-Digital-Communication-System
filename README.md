@@ -5,7 +5,7 @@ Compare modulation and coding choices through reproducible bit-error experiments
 [![CI](https://img.shields.io/github/actions/workflow/status/Prajwal-Pratap-Yadav/Simulation-of-Digital-Communication-System/ci.yml?branch=main&style=flat-square&labelColor=0b1220)](https://github.com/Prajwal-Pratap-Yadav/Simulation-of-Digital-Communication-System/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-MIT-34d399?style=flat-square&labelColor=0b1220)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12-38bdf8?style=flat-square&labelColor=0b1220)](pyproject.toml)
-[![Status](https://img.shields.io/badge/status-experimental-fbbf24?style=flat-square&labelColor=0b1220)](CHANGELOG.md)
+[![Status](https://img.shields.io/badge/status-0.1.0%20experimental-fbbf24?style=flat-square&labelColor=0b1220)](CHANGELOG.md)
 
 ![Actual simulator output: BER curves, analytical overlays and descriptive confidence intervals](reports/figures/ber.png)
 
@@ -118,6 +118,7 @@ and local smoke reports, preserving committed evidence. See [CONTRIBUTING](CONTR
 - [CLI invalid-input tests — good first issue](https://github.com/Prajwal-Pratap-Yadav/Simulation-of-Digital-Communication-System/issues/3).
 
 These are planned enhancements, not implemented capabilities.
+They are tracked in the [Next measurable upgrades milestone](https://github.com/Prajwal-Pratap-Yadav/Simulation-of-Digital-Communication-System/milestones).
 
 ## License and citation
 

@@ -16,6 +16,18 @@ if gh release view "$tag" --repo "$expected_repo" >/dev/null 2>&1; then
   }
   exit 0
 fi
+milestone=$(gh api "repos/$expected_repo/milestones" \
+  --jq '.[] | select(.title == "Next measurable upgrades") | .number')
+if [[ -z "$milestone" ]]; then
+  milestone=$(gh api --method POST "repos/$expected_repo/milestones" \
+    -f title='Next measurable upgrades' \
+    -f description='Stopping-aware intervals, pulse shaping and CLI validation.' \
+    --jq '.number')
+fi
+for issue in 1 2 3; do
+  gh api --method PATCH "repos/$expected_repo/issues/$issue" \
+    -F milestone="$milestone" --silent
+done
 # Create a lightweight tag with no additional commit; never move an old tag.
 git tag "$tag" "$head"
 git push origin "refs/tags/$tag"
