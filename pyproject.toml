@@ -13,7 +13,7 @@ authors = [{name = "Prajwal Pratap Yadav", email = "prajwalpratapyadav5@gmail.co
 dependencies = ["numpy==2.3.5", "scipy==1.17.0", "matplotlib==3.10.8"]
 
 [project.optional-dependencies]
-dev = ["pytest==8.3.5", "ruff==0.11.13", "black==25.1.0", "mypy==1.15.0", "build==1.2.2.post1", "pre-commit==4.2.0", "pip-audit==2.9.0"]
+dev = ["pytest==8.3.5", "ruff==0.11.13", "black==25.1.0", "mypy==1.15.0", "build==1.2.2.post1", "pre-commit==4.2.0", "pip-audit==2.9.0", "setuptools==80.9.0", "wheel==0.45.1"]
 
 [project.scripts]
 commsim = "commsim.cli:main"
