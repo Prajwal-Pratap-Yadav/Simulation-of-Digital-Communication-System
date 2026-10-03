@@ -24,4 +24,4 @@ def test_original_matlab_column_major_bit_roundtrip():
     recovered = np.column_stack((symbols.real > 0, symbols.imag > 0))
     np.testing.assert_array_equal(recovered.ravel(order="F"), bits)
     # This energy is precisely why Es=1 noise cannot be used unchanged.
-    assert np.mean(np.abs(symbols) ** 2) == 2
+    np.testing.assert_allclose(np.mean(np.abs(symbols) ** 2), 2)
