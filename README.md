@@ -9,6 +9,8 @@ Compare modulation and coding choices through reproducible bit-error experiments
 
 ![Actual simulator output: BER curves, analytical overlays and descriptive confidence intervals](reports/figures/ber.png)
 
+**Review the project:** [code, tests, and evidence](docs/REVIEW_GUIDE.md).
+
 ## Why this matters
 
 - **Problem:** modulation comparisons can be misleading when symbol energy and bit energy are mixed.
@@ -126,3 +128,4 @@ They are tracked in the [Next measurable upgrades milestone](https://github.com/
 are described in [DATA.md](docs/DATA.md). Use [CITATION.cff](CITATION.cff) and cite
 the exact source commit/configuration when reproducing a result. Questions about
 vulnerabilities follow [SECURITY.md](SECURITY.md).
+
