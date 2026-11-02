@@ -23,3 +23,10 @@ Primary references:
 
 These links document the conventions and formulas. Measured values are generated
 by this repository's runner and are never copied from a reference curve.
+
+The runner records `theory_kind="not available"` whenever the `theory` value
+is absent, including coded QAM and QAM over fading channels. The approximation
+label is reserved for an actual uncoded square-QAM/AWGN comparison. Accepted
+mixed-case family names such as `PSK` are normalized before simulation,
+configuration hashing and theory lookup. This does not add analytical formulas
+or change the random sampling or numerical results of existing lowercase configs.
