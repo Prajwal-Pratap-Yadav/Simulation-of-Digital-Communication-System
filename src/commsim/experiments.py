@@ -33,7 +33,10 @@ class Curve:
     def __post_init__(self) -> None:
         if not self.name or len(self.name) > 80:
             raise ValueError("curve name must contain 1 to 80 characters")
-        constellation(self.family, self.order)
+        modem = constellation(self.family, self.order)
+        # Mapping already accepts mixed case; metadata and theory use the same
+        # canonical family rather than silently dropping an available overlay.
+        object.__setattr__(self, "family", modem.family)
         code_rate(self.coding)
         if self.channel not in {"awgn", "rayleigh", "rician"}:
             raise ValueError("unknown channel")
@@ -127,9 +130,9 @@ def simulate_point(curve: Curve, ebn0_db: float, config: Config, seed: Any) -> d
         "wilson_high": high,
         "theory": theoretical,
         "theory_kind": (
-            "square-QAM approximation"
-            if curve.family == "qam"
-            else ("exact" if theoretical is not None else "not available")
+            "not available"
+            if theoretical is None
+            else ("square-QAM approximation" if curve.family == "qam" else "exact")
         ),
         "stop_reason": "error_target" if errors >= config.min_errors else "bit_cap",
         "elapsed_seconds": time.perf_counter() - started,
